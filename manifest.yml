@@ -2,7 +2,7 @@ modules:
   jira:issuePanel:
     - key: hackathon-hello-world-panel
       function: main
-      title: Hackathon
+      title: DemoStatus
       icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
   function:
     - key: main

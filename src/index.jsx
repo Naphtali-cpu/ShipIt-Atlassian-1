@@ -8,7 +8,16 @@ const fetchCommentsForIssue = async (issueIdOrKey) => {
     .requestJira(route`/rest/api/3/issue/${issueIdOrKey}/comment`);
 
   const data = await res.json();
-  return data.comments;
+
+  if (res.status === 201) {
+    return data.comments;
+  } else {
+    console.log("You are good to go!!")
+  }
+  // console.log(data.comments);
+
+  // return data.comments;
+  
 };
 
 const App = () => {
